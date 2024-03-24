@@ -80,6 +80,8 @@ const BestSeller = () => {
 
   return (
     <div className="bestseller__container">
+      <h2 className="section__title">Best Seller</h2>
+      <h3 className="section__subtitle">Top selling products.</h3>
       <div className="carousel">
         <div className="carousel__items">
           {carouselItems.slice(startIndex, startIndex + 4).map((item) => (
