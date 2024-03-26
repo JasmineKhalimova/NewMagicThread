@@ -4,95 +4,95 @@ import "./services.css";
 const PopularServices = () => {
   return (
     <div className="pservices">
-      <h1>Services</h1>
+      <h1>Our Popular Services</h1>
       <p>We offer a wide range of services.</p>
       <div className="pservices__container custom-container grid">
         <div className="pservices__inner">
           <img
-            src={require("../../assets/about.jpg")}
+            src={require("../../assets/dress-making.jpg")}
             alt="Profile"
             title="Profile"
-            className="about__img"
+            className="services__img"
             width="300"
             height="225"
           />
           <div className="pservices__inner-content">
-            <h2>Dress Making</h2>
+            <span>Dress Making</span>
             <p></p>
           </div>
         </div>
 
         <div className="pservices__inner">
           <img
-            src={require("../../assets/about.jpg")}
+            src={require("../../assets/seat-cover.jpg")}
             alt="Profile"
             title="Profile"
-            className="about__img"
+            className="services__img"
             width="300"
             height="225"
           />
           <div className="pservices__inner-content">
-            <h2>Seat Covers</h2>
+            <span>Seat Covers</span>
             <p></p>
           </div>
         </div>
 
         <div className="pservices__inner">
           <img
-            src={require("../../assets/about.jpg")}
+            src={require("../../assets/tailoring.jpg")}
             alt="Profile"
             title="Profile"
-            className="about__img"
+            className="services__img"
             width="300"
             height="225"
           />
           <div className="pservices__inner-content">
-            <h2>Tailoring</h2>
+            <span>Tailoring</span>
             <p></p>
           </div>
         </div>
 
         <div className="pservices__inner">
           <img
-            src={require("../../assets/about.jpg")}
+            src={require("../../assets/alterations.jpg")}
             alt="Profile"
             title="Profile"
-            className="about__img"
+            className="services__img"
             width="300"
             height="225"
           />
           <div className="pservices__inner-content">
-            <h2>Alterations</h2>
+            <span>Alterations</span>
             <p></p>
           </div>
         </div>
 
         <div className="pservices__inner">
           <img
-            src={require("../../assets/about.jpg")}
+            src={require("../../assets/wedding-dress.jpg")}
             alt="Profile"
             title="Profile"
-            className="about__img"
+            className="services__img"
             width="300"
             height="225"
           />
           <div className="pservices__inner-content">
-            <h2>Wedding Dresses</h2>
+            <span>Wedding Dresses</span>
             <p></p>
           </div>
         </div>
 
         <div className="pservices__inner">
           <img
-            src={require("../../assets/about.jpg")}
+            src={require("../../assets/upolestry.jpg")}
             alt="Profile"
             title="Profile"
-            className="about__img"
+            className="services__img"
             width="300"
             height="225"
           />
           <div className="pservices__inner-content">
-            <h2>Upolestry Services</h2>
+            <span>Upolestry Services</span>
             <p></p>
           </div>
         </div>
