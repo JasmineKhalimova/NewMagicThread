@@ -204,47 +204,11 @@ img {
   align-items: center;
 }
 
-/**==== Testimonials ====**/
-
-.testimonials__container {
-  width: 750px;
-}
-
-.testimonials__card {
-  background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  border-radius: 1.5rem;
-  margin-bottom: var(--mb-3);
-  min-height: 8rem;
-}
-
-.testimonials__icon {
-  font-size: 2rem;
+/**==== Instagram ====**/
+.instagram__container {
+  margin: auto;
   text-align: center;
-  color: var(--title-color);
-  width: 100%;
-}
-
-.testimonials__name {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-semi-bold);
-  margin-bottom: var(--mb-0-25);
-  text-align: center;
-}
-
-.testimonials__description {
-  font-size: var(--small-font-size);
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-.swiper-pagination-bullet {
-  background-color: var(--text-color) !important;
-}
-.swiper {
-  padding: 1rem;
-  width: auto;
+  max-width: 800px;
 }
 
 /**==== Footer ====**/

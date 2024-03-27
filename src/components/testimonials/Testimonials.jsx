@@ -48,41 +48,75 @@ const BestSeller = () => {
       setStartIndex((prevIndex) =>
         prevIndex === carouselItems.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [carouselItems.length]);
 
   return (
-    <div className="bestseller__container">
+    <div className="testimonials__container">
       <h2 className="section__title">Testimonials</h2>
       <h3 className="section__subtitle">Google reviews</h3>
       <img
         src={require("../../assets/reviews/google-stars.png")}
-        alt="About Us"
-        title="About Us"
-        className="about__img"
+        alt="Testimonials"
+        title="Testimonials"
+        className="testimonial__img"
         width="500"
         height="333"
       />
-      <div className="carousel">
+      <div className="carousel testimonials__card">
         <div className="carousel__items">
           {carouselItems.slice(startIndex, startIndex + 1).map((item) => (
             <div key={item.id} className="carousel__item">
-              <img src={item.image} alt={item.text} />
-              <div className="carousel__text">{item.text}</div>
+              <img
+                className="testimonials__icon"
+                src={item.image}
+                alt={item.text}
+              />
+              <div className="testimonials__description">{item.text}</div>
             </div>
           ))}
         </div>
         <button
           className="carousel__nav carousel__nav--prev"
           onClick={handleClickPrev}>
-          Prev
+          <svg
+            className="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m15 19-7-7 7-7"
+            />
+          </svg>
         </button>
         <button
           className="carousel__nav carousel__nav--next"
           onClick={handleClickNext}>
-          Next
+          <svg
+            className="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24">
+            <path
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="m9 5 7 7-7 7"
+            />
+          </svg>
         </button>
       </div>
     </div>
