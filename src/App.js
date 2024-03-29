@@ -6,6 +6,7 @@ import BestSeller from './components/shop/BestSeller';
 import About from './components/about/About';
 import Testimonials from './components/testimonials/Testimonials';
 import Instagram from './components/instagram/Instagram';
+import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <About />
         <Testimonials />
         <Instagram />
+        <Contact />
       </main>
       <Footer />
     </div>

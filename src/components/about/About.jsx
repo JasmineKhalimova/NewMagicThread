@@ -9,18 +9,21 @@ const About = () => {
       <h3 className="section__subtitle">Company History</h3>
       <div className="about__container custom-container grid">
         <div className="about__data">
-          <p className="about__description">
-            Trend Health and Beauty Clinic/Salon were founded in 2016 and since
-            then it has been at the forefront of the beauty industry in Cork
-            City. We offer a wide range of treatments such as nonsurgical
-            facials treatments, laser treatments, spa treatments, waxing,
-            threading, manicures, and microdermabrasion along with our core
-            business of pedicure treatments such as fungal and other infections.
+          <p>
+            Magic Thread Cork was founded in 2015. Our team, though small,
+            boasts years of expertise. We excel in crafting bespoke dresses and
+            wedding gowns, performing alterations, designing suits, car seats,
+            bike seats, and various other vehicle seats, as well as creating
+            clothing designs. Continuously honing our skills and staying abreast
+            of the latest fashion trends, our skilled and seasoned specialists
+            deliver top-notch quality work consistently.
           </p>
           <p>
-            We always have our finger on the beauty pulse and are constantly
-            adding new products and services to keep up with the constant
-            evolution of the industry.
+            Whether you're in need of a stunning wedding dress, elegant
+            mother-of-the-bride attire, charming bridesmaid dresses,
+            sophisticated cocktail dresses, beautiful Debs, Confirmation and
+            Communion dresses, vibrant Irish dancing dresses, or captivating
+            fancy costumes, we have you covered.
           </p>
         </div>
         <img

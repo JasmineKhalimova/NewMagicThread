@@ -1,22 +1,14 @@
 import React, { useState } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Redirect,
-  Switch,
-} from "react-router-dom";
 import "./header.css";
 import "../../assets/logo.png";
 import {
   AiOutlineHome,
-  AiOutlineUser,
   AiOutlineSend,
   AiOutlineClose,
   AiOutlineAppstore,
 } from "react-icons/ai";
 import { BsCardList } from "react-icons/bs";
 import { CiDiscount1 } from "react-icons/ci";
-import Shop from "../shop/Shop";
 
 export const Header = () => {
   // Mobile menu toggle
@@ -28,8 +20,8 @@ export const Header = () => {
         <a href="index.html" className="nav__logo">
           <img
             src={require("../../assets/logo.png")}
-            alt="logo"
-            title="logo"
+            alt="header logo"
+            title="header logo"
             width="120"
             height="60"
           />
@@ -49,14 +41,15 @@ export const Header = () => {
               </a>
             </li>
             <li className="nav__item">
-              <Switch>
-                <Redirect to="/shop" />
-              </Switch>
-            </li>
-            <li className="nav__item">
               <a className="nav__link" href="#services">
                 <BsCardList className="nav__icon" />
                 About
+              </a>
+            </li>
+            <li className="nav__item">
+              <a className="nav__link" href="#shop">
+                <AiOutlineSend className="nav__icon" />
+                Shop
               </a>
             </li>
             <li className="nav__item">

@@ -99,7 +99,7 @@ const BestSeller = () => {
         <div className="bestseller-carousel__items">
           {carouselItems.slice(startIndex, startIndex + 4).map((item) => (
             <div key={item.id} className="bestseller-carousel__item">
-              <img src={item.image} alt={item.text} />
+              <img title="best sellers" src={item.image} alt={item.text} />
               <div className="bestseller-carousel__title">{item.title}</div>
               <div className="bestseller-carousel__text">{item.text}</div>
               <div className="bestseller-carousel__inner">

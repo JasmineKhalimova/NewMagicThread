@@ -15,8 +15,8 @@ const Instagram = () => {
           target="_blank">
           <img
             src={require("../../assets/instagram.jpg")}
-            alt="Instagram"
-            title="Instagram"
+            alt="instagram"
+            title="instagram"
             className=""
             width="1284"
             height="840"

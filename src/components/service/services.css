@@ -40,10 +40,13 @@
   font-size: var(--small-font-size);
   display: inline-flex;
   align-items: center;
-  column-gap: 0.25rem;
   cursor: pointer;
-  position: absolute;
-  bottom: 18px;
+  position: relative;
+  padding: 1rem;
+  top: -4px;
+  background: #ccc;
+  width: 100%;
+  gap: 0.5rem;
 }
 
 .service__button-icon {
@@ -165,16 +168,10 @@
 }
 
 @media screen and (max-width: 768px) {
-  .services__container {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .pservices__container {
     grid-template-columns: repeat(3, 1fr);
   }
-}
-
-@media screen and (max-width: 576px) {
-  .services__container {
+  .services__modal-items {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
