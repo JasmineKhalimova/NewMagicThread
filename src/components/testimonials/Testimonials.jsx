@@ -54,9 +54,9 @@ const BestSeller = () => {
   }, [carouselItems.length]);
 
   return (
-    <div className="testimonials__container">
+    <div className="testimonials__container spacing">
       <h2 className="section__title">Testimonials</h2>
-      <h3 className="section__subtitle">Google reviews</h3>
+      <h3 className="pservices_title">Google reviews</h3>
       <img
         src={require("../../assets/reviews/google-stars.png")}
         alt="Testimonials"
@@ -82,7 +82,6 @@ const BestSeller = () => {
           className="carousel__nav carousel__nav--prev"
           onClick={handleClickPrev}>
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -102,7 +101,6 @@ const BestSeller = () => {
           className="carousel__nav carousel__nav--next"
           onClick={handleClickNext}>
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"

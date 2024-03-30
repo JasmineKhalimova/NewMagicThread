@@ -9,13 +9,17 @@
   margin: auto;
   gap: 0.5rem;
   justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .bestseller-carousel__item {
   flex: 0 0 auto;
   width: 300px;
-  text-align: center;
-  border-radius: 0.25rem;
+  text-align: left;
+  padding: 0.5rem 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .bestseller-carousel__item img {
@@ -24,9 +28,26 @@
   margin-bottom: 10px;
 }
 
+.bestseller-carousel__title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.2rem;
+  margin-bottom: 5px;
+}
+
 .bestseller-carousel__text {
-  font-size: 16px;
+  font-size: 13px;
   margin-bottom: 10px;
+  line-height: 1.2rem;
+  min-height: 100px;
+}
+
+.bestseller-carousel__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .bestseller-carousel__button {
@@ -58,9 +79,33 @@
 }
 
 .bestseller-carousel__nav--prev {
-  left: 10px;
+  left: 2rem;
 }
 
 .bestseller-carousel__nav--next {
-  right: 10px;
+  right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .bestseller-carousel__items {
+    justify-content: flex-start;
+    gap: 0.7rem;
+  }
+  .bestseller-carousel__item {
+    width: 200px;
+  }
+  .bestseller-carousel__title {
+    font-size: 13px;
+  }
+
+  .bestseller-carousel__nav--prev {
+    left: 10px;
+  }
+
+  .bestseller-carousel__nav--next {
+    right: 10px;
+  }
+  .service__button-icon {
+    font-size: 13px;
+  }
 }

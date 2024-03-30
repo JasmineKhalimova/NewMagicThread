@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer__container spacing">
-      <div>
+      <div className="footer__container-inner custom-container grid">
         <ul>
           <li>About Us</li>
           <li>Contact Us</li>

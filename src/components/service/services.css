@@ -140,6 +140,7 @@
 
 .pservices_title {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .pservices__container {
@@ -171,5 +172,19 @@
   }
   .services__modal-items {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .pservices__inner-content {
+    padding: 0.5rem;
+  }
+  .pservices__inner-content h4 {
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .service__button {
+    padding: 0.5rem;
+  }
+
+  .spacing {
+    margin-top: 3rem;
   }
 }

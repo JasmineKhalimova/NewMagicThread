@@ -94,7 +94,7 @@ const BestSeller = () => {
   return (
     <div className="bestseller__container spacing">
       <h2 className="section__title">Best Seller</h2>
-      <h3 className="section__subtitle">Top selling products.</h3>
+      <h3 className="pservices_title">Top selling products.</h3>
       <div className="bestseller-carousel">
         <div className="bestseller-carousel__items">
           {carouselItems.slice(startIndex, startIndex + 4).map((item) => (
@@ -103,7 +103,9 @@ const BestSeller = () => {
               <div className="bestseller-carousel__title">{item.title}</div>
               <div className="bestseller-carousel__text">{item.text}</div>
               <div className="bestseller-carousel__inner">
-                <span className="bestseller-carousel__id">ID: {item.id}</span>
+                <span className="bestseller-carousel__id">
+                  Product ID: {item.id}
+                </span>
                 <span className="bestseller-carousel__price">{item.price}</span>
               </div>
               <button className="bestseller-carousel__button">
@@ -116,7 +118,6 @@ const BestSeller = () => {
           className="bestseller-carousel__nav carousel__nav--prev"
           onClick={handleClickPrev}>
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -136,7 +137,6 @@ const BestSeller = () => {
           className="bestseller-carousel__nav carousel__nav--next"
           onClick={handleClickNext}>
           <svg
-            className="w-6 h-6 text-gray-800 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             width="24"

@@ -240,6 +240,11 @@ img {
   text-align: right;
 }
 
+.footer__container-inner {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
 /**==== Breakpoints ====**/
 @media screen and (max-width: 992px) {
   .button {
