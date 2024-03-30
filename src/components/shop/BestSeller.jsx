@@ -92,7 +92,7 @@ const BestSeller = () => {
   };
 
   return (
-    <div className="bestseller__container">
+    <div className="bestseller__container spacing">
       <h2 className="section__title">Best Seller</h2>
       <h3 className="section__subtitle">Top selling products.</h3>
       <div className="bestseller-carousel">

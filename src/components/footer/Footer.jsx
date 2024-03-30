@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer__container">
+    <div className="footer__container spacing">
       <div>
         <ul>
           <li>About Us</li>

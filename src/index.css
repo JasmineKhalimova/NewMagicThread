@@ -137,6 +137,10 @@ img {
   height: auto;
 }
 
+.spacing {
+  margin-top: 4rem;
+  padding-top: 1rem;
+}
 /**==== Reusable classes ====**/
 .section {
   padding: 5rem 0 2rem;
@@ -179,7 +183,6 @@ img {
 
 .grid {
   display: grid;
-  gap: 1.5rem;
 }
 
 /**==== Buttons ====**/
@@ -239,10 +242,6 @@ img {
 
 /**==== Breakpoints ====**/
 @media screen and (max-width: 992px) {
-  .custom-container {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-  }
   .button {
     padding: 1rem 1.75rem;
   }
@@ -263,12 +262,5 @@ img {
 @media screen and (max-width: 576px) {
   .instagram__container > div > div {
     grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .custom-container {
-    margin-left: var(--mb-1);
-    margin-right: var(--mb-1);
   }
 }

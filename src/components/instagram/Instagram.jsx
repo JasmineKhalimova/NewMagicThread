@@ -2,7 +2,7 @@ import React from "react";
 
 const Instagram = () => {
   return (
-    <section className="instagram section">
+    <section className="instagram section spacing">
       <h2 className="section__title">Instagram</h2>
       <h3 className="section__subtitle">
         Follow us on instagram for more up to date offers and news

@@ -4,7 +4,7 @@ import "../../assets/about.jpg";
 
 const About = () => {
   return (
-    <section className="about section" id="about">
+    <section className="about section spacing" id="about">
       <h2 className="section__title"> About Us</h2>
       <h3 className="section__subtitle">Company History</h3>
       <div className="about__container custom-container grid">
