@@ -7,7 +7,7 @@
   overflow-x: hidden;
   max-width: 1280px;
   margin: auto;
-  gap: 0.5rem;
+  gap: 1rem;
   justify-content: center;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -17,9 +17,15 @@
   flex: 0 0 auto;
   width: 300px;
   text-align: left;
-  padding: 0.5rem 0.5rem 1rem;
-  border: 1px solid #ccc;
+  padding: 0.7rem 0.7rem 1rem;
   border-radius: 5px;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--container-color);
+}
+
+.bestseller-carousel__item:hover {
+  box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);
 }
 
 .bestseller-carousel__item img {
@@ -33,6 +39,7 @@
   font-size: 15px;
   line-height: 1.2rem;
   margin-bottom: 5px;
+  min-height: 60px;
 }
 
 .bestseller-carousel__text {
@@ -46,22 +53,27 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  font-weight: 700;
   margin-bottom: 1rem;
+}
+
+.bestseller-carousel__id {
+  font-weight: 700;
 }
 
 .bestseller-carousel__button {
   padding: 8px 16px;
-  background-color: #007bff;
+  background-color: #ad3236;
   color: white;
-  border: none;
+  border: 1px solid #ad3236;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .bestseller-carousel__button:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color: #ad3236;
+  border: 1px solid ad3236;
 }
 
 .bestseller-carousel__nav {
@@ -84,6 +96,32 @@
 
 .bestseller-carousel__nav--next {
   right: 2rem;
+}
+
+.bestseller-carousel__sale {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: red;
+  color: white;
+  padding: 20px 15px;
+  border-radius: 50%;
+}
+
+.bestseller-carousel__prcies {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.bestseller-carousel__salep {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.bestseller-carousel__price {
+  text-decoration: line-through;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 768px) {

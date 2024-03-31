@@ -54,9 +54,9 @@ const BestSeller = () => {
   }, [carouselItems.length]);
 
   return (
-    <div className="testimonials__container spacing">
+    <div className="testimonials__container section spacing">
       <h2 className="section__title">Testimonials</h2>
-      <h3 className="pservices_title">Google reviews</h3>
+      <h3 className="section__subtitle">Google reviews</h3>
       <img
         src={require("../../assets/reviews/google-stars.png")}
         alt="Testimonials"

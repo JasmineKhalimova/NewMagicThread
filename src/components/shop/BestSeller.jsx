@@ -8,7 +8,8 @@ const BestSeller = () => {
       image: require("../../assets/shop/homepage-product/best-seller.jpg"),
       title: "A-line Scoop Sweep Train Chiffon Lace Wedding Dress",
       text: "Silhouette: A-line, Length: Sweep Train, Neckline: Scoop,Straps & Sleeves: 3/4 Sleeve, Back Style: button, Fully Lined: Yes, Built-In Bra: Yes, Boning: Yes, Collection: Classic ",
-      price: "€60",
+      price: "€300",
+      salep: "€65",
       buttonText: "Check Availability",
     },
     {
@@ -17,7 +18,8 @@ const BestSeller = () => {
       title:
         "Red Ball-Gown/Princess V-Neck Floor-Length Satin Prom Dresses With Sequins ",
       text: "Fabric: Lace, Embellishment: Sequins, Silhouette: Ball-Gown/Princess, Length: Floor-Length, Neckline: V-Neck, Straps & Sleeves: Sleeveless, Back Style: Back Zip, Fully Lined: Yes, Built-In Bra: Yes, Boning: No",
-      price: "€40",
+      price: "€250",
+      salep: "€60",
       buttonText: "Check Availability",
     },
     {
@@ -25,7 +27,8 @@ const BestSeller = () => {
       image: require("../../assets/shop/homepage-product/best-seller3.jpg"),
       title: "A-line Scoop Sweep Train Chiffon Lace Wedding Dress",
       text: "Silhouette: A-line, Length: Sweep Train, Neckline: Scoop,Straps & Sleeves: 3/4 Sleeve, Back Style: button, Fully Lined: Yes, Built-In Bra: Yes, Boning: Yes, Collection: Classic ",
-      price: "€60",
+      price: "€450",
+      salep: "€70",
       buttonText: "Check Availability",
     },
     {
@@ -33,7 +36,8 @@ const BestSeller = () => {
       image: require("../../assets/shop/homepage-product/best-seller6.jpg"),
       title: "A-line Scoop Sweep Train Chiffon Lace Wedding Dress",
       text: "Silhouette: A-line, Length: Sweep Train, Neckline: Scoop,Straps & Sleeves: 3/4 Sleeve, Back Style: button, Fully Lined: Yes, Built-In Bra: Yes, Boning: Yes, Collection: Classic ",
-      price: "€60",
+      price: "€550",
+      salep: "€80",
       buttonText: "Check Availability",
     },
     {
@@ -42,39 +46,45 @@ const BestSeller = () => {
       title:
         "Blue Ball-Gown/Princess V-Neck Floor-Length Satin Prom Dresses With Sequins ",
       text: "Fabric: Lace, Embellishment: Sequins, Silhouette: Ball-Gown/Princess, Length: Floor-Length, Neckline: V-Neck, Straps & Sleeves: Sleeveless, Back Style: Back Zip, Fully Lined: Yes, Built-In Bra: Yes, Boning: No",
-      price: "€40",
+      price: "€250",
+      salep: "€60",
       buttonText: "Check Availability",
     },
     {
       id: 6,
       image: require("../../assets/shop/homepage-product/best-seller4.jpg"),
-      title: "A-line Scoop Sweep Train Chiffon Lace Wedding Dress",
-      text: "Silhouette: A-line, Length: Sweep Train, Neckline: Scoop,Straps & Sleeves: 3/4 Sleeve, Back Style: button, Fully Lined: Yes, Built-In Bra: Yes, Boning: Yes, Collection: Classic ",
-      price: "€60",
+      title:
+        "Purple Mermaid V-Neck Sweep Train Lace Tulle Dresses With Sequins",
+      text: "Silhouette: A-line, Length: Sweep Train, Neckline: V-Neck & Sleeves: 3/4 Sleeve, Back Style: button, Fully Lined: Yes, Built-In Bra: Yes, Boning: No, Collection: Classic",
+      price: "€150",
+      salep: "€40",
       buttonText: "Check Availability",
     },
     {
       id: 7,
       image: require("../../assets/shop/homepage-product/best-seller7.jpg"),
-      title: "A-line Scoop Sweep Train Chiffon Lace Wedding Dress",
-      text: "Silhouette: A-line, Length: Sweep Train, Neckline: Scoop,Straps & Sleeves: 3/4 Sleeve, Back Style: button, Fully Lined: Yes, Built-In Bra: Yes, Boning: Yes, Collection: Classic ",
-      price: "€60",
+      title: "Purple Floor-Length Sleevless Satin Dresses",
+      text: "Fabric: Stretch Satin, Silhouette: A-line, Length: Floor-Length, Neckline: Cowl, Scoop, Straps & Sleeves: Sleeveless, Fully Lined: Yes, Built-In Bra: Yes, Boning: No, Back Style: Back Zip, V Back",
+      price: "€90",
+      salep: "€30",
       buttonText: "Check Availability",
     },
     {
       id: 8,
       image: require("../../assets/shop/homepage-product/best-seller8.jpg"),
-      title: "A-line Scoop Sweep Train Chiffon Lace Wedding Dress",
-      text: "Silhouette: A-line, Length: Sweep Train, Neckline: Scoop,Straps & Sleeves: 3/4 Sleeve, Back Style: button, Fully Lined: Yes, Built-In Bra: Yes, Boning: Yes, Collection: Classic ",
-      price: "€60",
+      title: "Black/Silver A-line Sweetheart Floor-Length Satin Dresses ",
+      text: "Fabric: Satin, Silhouette: A-line, Length: Floor-Length, Neckline: Sweetheart, Sleeves: Sleeveless, Fully Lined: Yes, Built-In Bra: Yes, Boning: No, Back Style: Back Zip, V Back",
+      price: "€80",
+      salep: "€30",
       buttonText: "Check Availability",
     },
     {
       id: 9,
       image: require("../../assets/shop/homepage-product/best-seller9.jpg"),
-      title: "A-line Scoop Sweep Train Chiffon Lace Wedding Dress",
-      text: "Silhouette: A-line, Length: Sweep Train, Neckline: Scoop,Straps & Sleeves: 3/4 Sleeve, Back Style: button, Fully Lined: Yes, Built-In Bra: Yes, Boning: Yes, Collection: Classic ",
+      title: "Cream/Blue Floor-Length Sleevless Satin Dresses",
+      text: "Fabric: Stretch Satin, Silhouette: A-line, Length: Floor-Length, Neckline: Cowl, Scoop, Straps & Sleeves: Sleeveless, Fully Lined: Yes, Built-In Bra: No, Boning: No, Back Style: Back Zip, V Back",
       price: "€60",
+      salep: "€30",
       buttonText: "Check Availability",
     },
   ];
@@ -94,11 +104,15 @@ const BestSeller = () => {
   return (
     <div className="bestseller__container spacing">
       <h2 className="section__title">Best Seller</h2>
-      <h3 className="pservices_title">Top selling products.</h3>
+      <h3 className="section__subtitle">
+        Clearance alert! We're liquidating our entire old inventory. Enjoy
+        discounts of 70% or more on all items.
+      </h3>
       <div className="bestseller-carousel">
         <div className="bestseller-carousel__items">
           {carouselItems.slice(startIndex, startIndex + 4).map((item) => (
             <div key={item.id} className="bestseller-carousel__item">
+              <span className="bestseller-carousel__sale">Sale</span>
               <img title="best sellers" src={item.image} alt={item.text} />
               <div className="bestseller-carousel__title">{item.title}</div>
               <div className="bestseller-carousel__text">{item.text}</div>
@@ -106,7 +120,14 @@ const BestSeller = () => {
                 <span className="bestseller-carousel__id">
                   Product ID: {item.id}
                 </span>
-                <span className="bestseller-carousel__price">{item.price}</span>
+                <div className="bestseller-carousel__prcies">
+                  <span className="bestseller-carousel__salep">
+                    {item.salep}
+                  </span>
+                  <span className="bestseller-carousel__price">
+                    {item.price}
+                  </span>
+                </div>
               </div>
               <button className="bestseller-carousel__button">
                 {item.buttonText}
@@ -115,7 +136,7 @@ const BestSeller = () => {
           ))}
         </div>
         <button
-          className="bestseller-carousel__nav carousel__nav--prev"
+          className="bestseller-carousel__nav bestseller-carousel__nav--prev"
           onClick={handleClickPrev}>
           <svg
             aria-hidden="true"
@@ -134,7 +155,7 @@ const BestSeller = () => {
           </svg>
         </button>
         <button
-          className="bestseller-carousel__nav carousel__nav--next"
+          className="bestseller-carousel__nav bestseller-carousel__nav--next"
           onClick={handleClickNext}>
           <svg
             aria-hidden="true"

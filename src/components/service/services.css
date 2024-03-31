@@ -85,10 +85,6 @@
   overflow-y: scroll;
 }
 
-.services__modal-inner {
-  margin-top: 1rem;
-}
-
 .services__modal-close {
   position: absolute;
   top: 0.7rem;

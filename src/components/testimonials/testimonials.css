@@ -5,11 +5,12 @@
 .carousel__items {
   display: flex;
   overflow-x: hidden;
+  justify-content: center;
 }
 
 .carousel__item {
   flex: 0 0 auto;
-  width: 300px;
+  width: 500px;
   margin-right: 20px;
   text-align: center;
 }
@@ -18,6 +19,7 @@
   width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
+  max-width: 200px;
 }
 
 .carousel__text {

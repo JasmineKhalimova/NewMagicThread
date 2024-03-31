@@ -41,7 +41,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="conatct section spacing" id="contact">
+    <section className="contact spacing" id="contact">
       <h2 className="section__title">Conatct US</h2>
       <h3 className="section__subtitle">Get in touch</h3>
 
@@ -88,9 +88,9 @@ const Contact = () => {
               <AiOutlineMail className="contact__card-icon" />
               <br />
               <a
-                href="mailto:trendhealthandbeauty@gmail.com"
+                href="mailto:dressmakingstudio@gmail.com"
                 className="contact__card-item">
-                <u>trendhealthandbeauty@gmail.com</u>
+                <u>dressmakingstudio@gmail.com</u>
               </a>
             </div>
             <div className="contact__card">
@@ -100,13 +100,10 @@ const Contact = () => {
                   <b>Opening Hours</b>
                 </li>
                 <li>
-                  <b>Mond - Tue:</b> 9: 30 am - 7 pm
+                  <b>Mond - Fri:</b> 9:30 a.m. - 6:30 p.m.
                 </li>
                 <li>
-                  <b>Wed - Fri:</b> 9: 30 am - 8 pm
-                </li>
-                <li>
-                  <b> Sat:</b> 10 am - 5 pm
+                  <b>Sat:</b> 9:30 a.m. - 6:30p.m.
                 </li>
               </ul>
             </div>
@@ -144,14 +141,9 @@ const Contact = () => {
           <h3 className="contact__title">Contact Form</h3>
           <span className="booking_info">
             <AiOutlineInfoCircle className="booking_info-icon" />
-            For online bookings please fill in the form below with your contact
-            details,
-            <br />
-            required services, preferred date and time and we will get back to
-            you.
-            <br />
-            Thank you
-            <br />
+            If you have any questions or need to inquire about product
+            availability, please feel free to reach out to us, and we will
+            respond to you promptly.Thank you
           </span>
           <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
