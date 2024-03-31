@@ -5,12 +5,8 @@
 .bestseller-carousel__items {
   display: flex;
   overflow-x: hidden;
-  max-width: 1280px;
-  margin: auto;
   gap: 1rem;
   justify-content: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .bestseller-carousel__item {
@@ -58,22 +54,7 @@
 
 .bestseller-carousel__id {
   font-weight: 700;
-}
-
-.bestseller-carousel__button {
-  padding: 8px 16px;
-  background-color: #ad3236;
-  color: white;
-  border: 1px solid #ad3236;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.bestseller-carousel__button:hover {
-  background-color: #fff;
-  color: #ad3236;
-  border: 1px solid ad3236;
+  font-size: 14px;
 }
 
 .bestseller-carousel__nav {
@@ -91,11 +72,11 @@
 }
 
 .bestseller-carousel__nav--prev {
-  left: 2rem;
+  left: 0rem;
 }
 
 .bestseller-carousel__nav--next {
-  right: 2rem;
+  right: 0rem;
 }
 
 .bestseller-carousel__sale {
@@ -133,17 +114,6 @@
     width: 200px;
   }
   .bestseller-carousel__title {
-    font-size: 13px;
-  }
-
-  .bestseller-carousel__nav--prev {
-    left: 10px;
-  }
-
-  .bestseller-carousel__nav--next {
-    right: 10px;
-  }
-  .service__button-icon {
     font-size: 13px;
   }
 }

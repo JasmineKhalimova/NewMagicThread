@@ -102,7 +102,7 @@ const BestSeller = () => {
   };
 
   return (
-    <div className="bestseller__container spacing">
+    <div className="bestseller__container section custom-container" id="shop">
       <h2 className="section__title">Best Seller</h2>
       <h3 className="section__subtitle">
         Clearance alert! We're liquidating our entire old inventory. Enjoy
@@ -129,9 +129,7 @@ const BestSeller = () => {
                   </span>
                 </div>
               </div>
-              <button className="bestseller-carousel__button">
-                {item.buttonText}
-              </button>
+              <button className="button">{item.buttonText}</button>
             </div>
           ))}
         </div>

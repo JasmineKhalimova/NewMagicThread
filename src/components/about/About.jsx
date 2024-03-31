@@ -4,10 +4,10 @@ import "../../assets/about.jpg";
 
 const About = () => {
   return (
-    <section className="about section spacing" id="about">
+    <section className="about section custom-container" id="about">
       <h2 className="section__title"> About Us</h2>
       <h3 className="section__subtitle">Company History</h3>
-      <div className="about__container custom-container grid">
+      <div className="about__container grid">
         <div className="about__data">
           <p>
             Magic Thread Cork was founded in 2015. Our team, though small,

@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./header.css";
 import "../../assets/logo.png";
 import {
-  AiOutlineHome,
   AiOutlineSend,
   AiOutlineClose,
   AiOutlineAppstore,
 } from "react-icons/ai";
 import { BsCardList } from "react-icons/bs";
-import { CiDiscount1 } from "react-icons/ci";
+import { TbNeedleThread } from "react-icons/tb";
+import { FaShoppingCart } from "react-icons/fa";
 
 export const Header = () => {
   // Mobile menu toggle
@@ -29,26 +29,20 @@ export const Header = () => {
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
-              <a className="nav__link active-link" href="#home">
-                <AiOutlineHome className="nav__icon" />
-                Home
-              </a>
-            </li>
-            <li className="nav__item">
-              <a className="nav__link" href="#offers">
-                <CiDiscount1 className="nav__icon" />
+              <a className="nav__link" href="#services">
+                <TbNeedleThread className="nav__icon" />
                 Services
               </a>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#services">
+              <a className="nav__link" href="#about">
                 <BsCardList className="nav__icon" />
                 About
               </a>
             </li>
             <li className="nav__item">
               <a className="nav__link" href="#shop">
-                <AiOutlineSend className="nav__icon" />
+                <FaShoppingCart className="nav__icon" />
                 Shop
               </a>
             </li>

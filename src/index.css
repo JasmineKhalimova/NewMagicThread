@@ -103,6 +103,7 @@ input,
 textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  line-height: 1.5rem;
 }
 
 body {
@@ -137,13 +138,9 @@ img {
   height: auto;
 }
 
-.spacing {
-  margin-top: 4rem;
-  padding-top: 1rem;
-}
 /**==== Reusable classes ====**/
 .section {
-  padding: 5rem 0 2rem;
+  padding-top: 4rem;
 }
 
 .section__title-large {
@@ -154,6 +151,7 @@ img {
 .section__title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  margin-bottom: 0.5rem;
 }
 
 .section_subtitle {
@@ -187,17 +185,20 @@ img {
 
 /**==== Buttons ====**/
 .button {
-  display: inline-block;
-  background-color: #574d4d;
-  color: var(--container-color);
-  padding: 0.5rem;
-  border-radius: 5px;
   font-weight: var(--font-medium);
+  padding: 8px 16px;
+  background-color: #ad3236;
+  color: white;
+  border: 1px solid #ad3236;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .button:hover {
-  background-color: #d8cb98;
-  color: #fff;
+  background-color: #fff;
+  color: #ad3236;
+  border: 1px solid ad3236;
 }
 
 .button__icon {
@@ -234,8 +235,14 @@ img {
 }
 .footer__inner {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  padding: 3.5rem 1rem;
 }
+
+.footer__div {
+  max-width: 1350px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+}
+
 .developed {
   text-align: right;
 }
@@ -248,14 +255,12 @@ img {
 /**==== Breakpoints ====**/
 @media screen and (max-width: 992px) {
   .button {
-    padding: 1rem 1.75rem;
+    padding: 0.5rem;
+    font-size: var(--small-font-size);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .section {
-    padding: 1rem 0 2rem;
-  }
   .footer__container {
     margin-bottom: 1rem;
   }

@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="footer__container spacing">
-      <div className="footer__container-inner custom-container grid">
+    <div className="footer__container">
+      <div className="footer__div footer__container-inner grid">
         <ul>
           <li>About Us</li>
           <li>Contact Us</li>
@@ -20,7 +20,7 @@ const Footer = () => {
           <li>Twitter</li>
         </ul>
       </div>
-      <div className="footer__inner custom-container grid">
+      <div className="footer__div footer__inner grid">
         <div className="copyrights">
           <p>
             Copyright© {new Date().getFullYear()}{" "}

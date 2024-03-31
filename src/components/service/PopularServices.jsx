@@ -10,9 +10,9 @@ const PopularServices = () => {
   };
 
   return (
-    <div className="pservices spacing">
-      <h1 className="pservices_title">Our Popular Services</h1>
-      <p className="pservices_title">We offer a wide range of services.</p>
+    <div className="pservices section" id="services">
+      <h1 className="section__title">Our Popular Services</h1>
+      <p className="section__subtitle">We offer a wide range of services.</p>
       <div className="pservices__container custom-container grid">
         <div className="pservices__inner">
           <img
@@ -56,7 +56,7 @@ const PopularServices = () => {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/about.jpg")}
+                    src={require("../../assets/dress-making1.jpg")}
                     alt="About Us"
                     title="About Us"
                     className="service__img"
@@ -116,7 +116,7 @@ const PopularServices = () => {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/about.jpg")}
+                    src={require("../../assets/seats.jpg")}
                     alt="About Us"
                     title="About Us"
                     className="service__img"
@@ -170,7 +170,7 @@ const PopularServices = () => {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/about.jpg")}
+                    src={require("../../assets/tailoring1.jpg")}
                     alt="About Us"
                     title="About Us"
                     className="service__img"
@@ -224,7 +224,7 @@ const PopularServices = () => {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/about.jpg")}
+                    src={require("../../assets/alterations1.jpg")}
                     alt="About Us"
                     title="About Us"
                     className="service__img"
@@ -280,7 +280,7 @@ const PopularServices = () => {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/about.jpg")}
+                    src={require("../../assets/wedding-dress.jpg")}
                     alt="About Us"
                     title="About Us"
                     className="service__img"
@@ -335,7 +335,7 @@ const PopularServices = () => {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/about.jpg")}
+                    src={require("../../assets/upholstery.jpg")}
                     alt="About Us"
                     title="About Us"
                     className="service__img"

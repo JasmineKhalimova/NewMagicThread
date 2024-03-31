@@ -23,10 +23,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_wjae2jk",
-        "template_4pewy6e",
+        "service_3n5y98l",
+        "template_tyoxe2s",
         form.current,
-        "9VxUcLyy8iGBA5-Sj"
+        "tMh7G49W0PZCM6Cso"
       )
       .then(
         (result) => {
@@ -41,10 +41,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact spacing" id="contact">
+    <section className="contact section custom-container" id="contact">
       <h2 className="section__title">Conatct US</h2>
-      <h3 className="section__subtitle">Get in touch</h3>
-
       <div className="contact__container container grid">
         <div className="contact__content">
           <h3 className="contact__title">Conatact Info</h3>
@@ -103,7 +101,7 @@ const Contact = () => {
                   <b>Mond - Fri:</b> 9:30 a.m. - 6:30 p.m.
                 </li>
                 <li>
-                  <b>Sat:</b> 9:30 a.m. - 6:30p.m.
+                  <b> Sat:</b> 9:30 a.m. - 6:30p.m.
                 </li>
               </ul>
             </div>
@@ -115,7 +113,7 @@ const Contact = () => {
                 href="https://www.facebook.com/treandcork"
                 target="_blank">
                 <BsFacebook />
-              </a>{" "}
+              </a>
               &nbsp;
               <a
                 className="contact__form-icons"
@@ -124,30 +122,20 @@ const Contact = () => {
                 href="https://www.instagram.com/trendhealthandbeautycork/"
                 target="_blank">
                 <BsInstagram />
-              </a>{" "}
-              &nbsp;
-              <a
-                className="contact__form-icons"
-                rel="noopener noreferrer"
-                aria-label="twitter link"
-                href="https://twitter.com/TrendCork"
-                target="_blank">
-                <BsTwitter />
               </a>
             </div>
           </div>
         </div>
-        <div className="contact__content">
-          <h3 className="contact__title">Contact Form</h3>
+        <div className="contact__form-section">
           <span className="booking_info">
             <AiOutlineInfoCircle className="booking_info-icon" />
             If you have any questions or need to inquire about product
             availability, please feel free to reach out to us, and we will
-            respond to you promptly.Thank you
+            respond to you promptly. Thank you
           </span>
           <form className="contact__form" ref={form} onSubmit={sendEmail}>
             <div className="contact__form-div">
-              <label className="contact__form-tag">Name</label>
+              <label className="contact__form-tag">Full Name</label>
               <input
                 type="text"
                 name="name"
@@ -162,7 +150,10 @@ const Contact = () => {
                 name="email"
                 className="contact__form-input"
                 placeholder="Your email"
-                required></input>
+                required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                title="Please enter a valid email address"
+              />
             </div>
             <div className="contact__form-div">
               <label className="contact__form-tag">Phone</label>
@@ -171,20 +162,20 @@ const Contact = () => {
                 name="phone"
                 className="contact__form-input"
                 placeholder="Your phone number"
-                required></input>
+                required
+                pattern="^\d{10}$"
+                title="Please enter a valid phone number"
+              />
             </div>
             <div className="contact__form-div">
-              <label className="contact__form-tag">Prefered Date & Time</label>
+              <label className="contact__form-tag">Product ID or Name</label>
               <input
-                type="date"
-                name="date"
-                className="contact__form-input"></input>
-              <input
-                type="time"
-                name="appt"
-                min="09:00"
-                max="18:00"
-                className="contact__form-input"></input>
+                type="text"
+                name="product"
+                className="contact__form-input"
+                placeholder="Product ID or Name"
+                title="Please enter a valid phone number"
+              />
             </div>
             <div className="contact__form-div">
               <label className="contact__form-tag">Message</label>

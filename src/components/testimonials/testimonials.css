@@ -10,9 +10,9 @@
 
 .carousel__item {
   flex: 0 0 auto;
-  width: 500px;
-  margin-right: 20px;
+  max-width: 500px;
   text-align: center;
+  width: 100%;
 }
 
 .carousel__item img {
@@ -65,12 +65,13 @@
 
 .testimonial__img {
   max-width: 400px;
-  magring: auto;
+  margin: auto;
   text-align: center;
+  width: 100%;
 }
 
 .testimonials__container {
-  width: 750px;
+  max-width: 750px;
   margin: auto;
   text-align: center;
 }

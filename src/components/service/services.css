@@ -37,13 +37,13 @@
 
 .service__button {
   color: var(--title-color);
-  font-size: var(--small-font-size);
+  font-size: var(--smaller-font-size);
   display: inline-flex;
   align-items: center;
   cursor: pointer;
   position: relative;
   padding: 1rem;
-  top: -4px;
+  top: -6px;
   background: #ccc;
   width: 100%;
   gap: 0.5rem;
@@ -76,7 +76,7 @@
 }
 
 .services__modal-content {
-  width: 600px;
+  width: 800px;
   max-height: 700px;
   position: relative;
   background-color: var(--container-color);
@@ -134,11 +134,6 @@
   font-size: var(--small-font-size);
 }
 
-.pservices_title {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
 .pservices__container {
   grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
@@ -179,8 +174,7 @@
   .service__button {
     padding: 0.5rem;
   }
-
-  .spacing {
-    margin-top: 3rem;
+  .service__button-icon {
+    font-size: 11px;
   }
 }

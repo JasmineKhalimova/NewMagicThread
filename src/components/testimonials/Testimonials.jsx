@@ -54,7 +54,7 @@ const BestSeller = () => {
   }, [carouselItems.length]);
 
   return (
-    <div className="testimonials__container section spacing">
+    <div className="testimonials__container custom-container section">
       <h2 className="section__title">Testimonials</h2>
       <h3 className="section__subtitle">Google reviews</h3>
       <img

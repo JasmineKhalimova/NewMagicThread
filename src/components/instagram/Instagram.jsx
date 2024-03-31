@@ -2,7 +2,7 @@ import React from "react";
 
 const Instagram = () => {
   return (
-    <section className="instagram spacing">
+    <section className="instagram section custom-container">
       <h2 className="section__title">Instagram</h2>
       <h3 className="section__subtitle">
         Follow us on instagram for more up to date offers and news
@@ -11,7 +11,7 @@ const Instagram = () => {
         <a
           rel="noopener noreferrer"
           aria-label="instagram link"
-          href="https://www.instagram.com/trendhealthandbeautycork/"
+          href="https://www.instagram.com/magicthreadcork/"
           target="_blank">
           <img
             src={require("../../assets/instagram.jpg")}
