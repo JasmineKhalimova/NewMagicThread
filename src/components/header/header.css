@@ -10,7 +10,6 @@ header {
 }
 
 nav {
-  height: calc(var(--header-height) +1.5rem);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +17,7 @@ nav {
 }
 
 .nav__logo {
-  padding: 0.5rem;
+  width: 85px;
 }
 
 .nav__logo,
@@ -59,12 +58,6 @@ nav {
   .header {
     top: initial;
     bottom: 0;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .nav {
-    height: var(--header-height);
   }
 
   .nav__menu {

@@ -141,7 +141,11 @@ const BestSeller = () => {
                     </span>
                   </div>
                 </div>
-                <button className="button">{item.buttonText}</button>
+                <button className="button">
+                  <a className="bestseller-carousel__button" href="#contact">
+                    {item.buttonText}
+                  </a>
+                </button>
               </div>
             ))}
         </div>

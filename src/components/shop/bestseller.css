@@ -57,6 +57,10 @@
   font-size: 14px;
 }
 
+.bestseller-carousel__button {
+  color: white;
+}
+
 .bestseller-carousel__nav {
   position: absolute;
   top: 50%;
