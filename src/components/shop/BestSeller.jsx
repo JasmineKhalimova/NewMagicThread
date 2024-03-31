@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./bestseller.css";
 
 const BestSeller = () => {
@@ -90,16 +90,26 @@ const BestSeller = () => {
   ];
 
   const [startIndex, setStartIndex] = useState(0);
+  const [itemsPerPage, setItemsPerPage] = useState(4);
 
   const handleClickNext = () => {
     setStartIndex((prevIndex) =>
-      Math.min(prevIndex + 1, carouselItems.length - 4)
+      Math.min(prevIndex + 1, carouselItems.length - itemsPerPage)
     );
   };
 
   const handleClickPrev = () => {
     setStartIndex((prevIndex) => Math.max(prevIndex - 1, 0));
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setItemsPerPage(window.innerWidth >= 768 ? 4 : 2);
+    };
+    handleResize(); // Initial call
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <div className="bestseller__container section custom-container" id="shop">
@@ -110,28 +120,30 @@ const BestSeller = () => {
       </h3>
       <div className="bestseller-carousel">
         <div className="bestseller-carousel__items">
-          {carouselItems.slice(startIndex, startIndex + 4).map((item) => (
-            <div key={item.id} className="bestseller-carousel__item">
-              <span className="bestseller-carousel__sale">Sale</span>
-              <img title="best sellers" src={item.image} alt={item.text} />
-              <div className="bestseller-carousel__title">{item.title}</div>
-              <div className="bestseller-carousel__text">{item.text}</div>
-              <div className="bestseller-carousel__inner">
-                <span className="bestseller-carousel__id">
-                  Product ID: {item.id}
-                </span>
-                <div className="bestseller-carousel__prcies">
-                  <span className="bestseller-carousel__salep">
-                    {item.salep}
+          {carouselItems
+            .slice(startIndex, startIndex + itemsPerPage)
+            .map((item) => (
+              <div key={item.id} className="bestseller-carousel__item">
+                <span className="bestseller-carousel__sale">Sale</span>
+                <img title="best sellers" src={item.image} alt={item.text} />
+                <div className="bestseller-carousel__title">{item.title}</div>
+                <div className="bestseller-carousel__text">{item.text}</div>
+                <div className="bestseller-carousel__inner">
+                  <span className="bestseller-carousel__id">
+                    Product ID: {item.id}
                   </span>
-                  <span className="bestseller-carousel__price">
-                    {item.price}
-                  </span>
+                  <div className="bestseller-carousel__prices">
+                    <span className="bestseller-carousel__salep">
+                      {item.salep}
+                    </span>
+                    <span className="bestseller-carousel__price">
+                      {item.price}
+                    </span>
+                  </div>
                 </div>
+                <button className="button">{item.buttonText}</button>
               </div>
-              <button className="button">{item.buttonText}</button>
-            </div>
-          ))}
+            ))}
         </div>
         <button
           className="bestseller-carousel__nav bestseller-carousel__nav--prev"

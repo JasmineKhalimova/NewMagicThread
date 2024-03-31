@@ -6,6 +6,7 @@
   align-items: center;
   max-width: 1024px;
   gap: 1rem;
+  margin: auto;
 }
 
 .about__img {
